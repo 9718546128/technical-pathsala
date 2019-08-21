@@ -1,1 +1,13 @@
+#INTRODUCTION
+
+Apache CassandraTM and CAP Theorem Consistency, Availability, and Partition Tolerance
+
+• By default, Cassandra is an AP database.
+• However, this is tunable with consistency level.
+• By tuning consistency level, you can make it more CP than AP.
+• However! Cassandra isn’t designed to be CA because you can’t sacrifice partition tolerance.
+
+
+
+
 
