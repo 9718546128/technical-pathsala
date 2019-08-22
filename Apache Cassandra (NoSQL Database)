@@ -8,6 +8,6 @@ Apache CassandraTM and CAP Theorem Consistency, Availability, and Partition Tole
 • However! Cassandra isn’t designed to be CA because you can’t sacrifice partition tolerance.
 
 
-https://towardsdatascience.com/getting-started-with-apache-cassandra-and-python-81e00ccf17c9
+
 
 
