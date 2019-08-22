@@ -1,0 +1,51 @@
+#CASSANDRA MONITORING 
+
+COMMON PORTS:
+
+7000 : Cassandra Intra-node communication.
+9042 : Cassandra native binary protocol client.
+9160 : Thrift client 
+7199 : JMX monitoring.
+
+#CQL query for node status.
+
+bin/nodetool status
+state: normal/leaving/joining/moving 
+node_status: up/down
+
+UN : UP/NORMAL            DN : DOWN/NORMAL
+UL : UP/LEAVING           DL : DOWN/LEAVING
+UJ : UP/JOINING           DJ : DOWN/JOINING
+UM : UP/MOVING            DM : DOWN/MOVING
+
+#TOOLS FOR MONITORING CASSANDRA
+
+Tools for monitoring cassandra include nodetool,Jconsole and OpsCenter.
+All of these tools work by communicating with cassandra through JMX(Java Management Extension).
+Through JMX , Cassandra exposes many metrics and commands which any of these tools can use to monitor and manage a cassandra cluster.
+
+#CQL query 
+bin/ls
+
+#nodetool<?>
+nodetool status
+nodetool info 
+nodetool ring 
+nodetool cfstats
+nodetool cfhistograms
+nodetool compactionstats
+
+Example:
+bin/nodetool -h 192.168.159.103 info
+
+#Jconsole which comes with JDK
+jdk 1.7.0.55$.ls.bin
+bin/Jconsole&
+
+#Remote process
+localhost : 7199
+
+
+
+
+
